@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-08-04 13:44:39
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-11-28 11:54:30
+ * @LastEditTime: 2021-03-11 15:09:24
 -->
 <template>
   <transition name="modal">
@@ -144,11 +144,11 @@
   background-color: rgba(0,0,0,0.4);
 }
 .modal-enter-active, .modal-leave-active {
-  filter: blur(0px);
+  /* filter: blur(0px); */
   opacity: 1;
 }
 .modal-enter, .modal-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  filter: blur(15px);
+  /* filter: blur(15px); */
   opacity: 0;
 }
 /* .background-enter{

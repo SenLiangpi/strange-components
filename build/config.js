@@ -4,8 +4,8 @@
  * @Github: https://github.com/SenLiangpi
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-08-03 16:55:56
- * @LastEditors: PiPi
- * @LastEditTime: 2020-08-03 17:09:44
+ * @LastEditors: Pi Patle
+ * @LastEditTime: 2021-04-22 16:58:56
  */
 const path = require('path')
 const fs = require('fs')
@@ -60,5 +60,6 @@ exports.alias = {
   '@strange-components': path.resolve(__dirname, 'strange-components'),
   'components': path.resolve(__dirname, '../src/strange-components/src/components'),
   'helpers': path.resolve(__dirname, '../src/strange-components/src/helpers'),
-  'dirctives': path.resolve(__dirname, '../src/strange-components/src/directives')
+  'dirctives': path.resolve(__dirname, '../src/strange-components/src/directives'),
+  "@ant-design/icons/lib/dist$": path.resolve(__dirname, "../src/icons.js")
 }

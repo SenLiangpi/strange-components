@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-08-03 17:03:15
  * @LastEditors: Pi Patle
- * @LastEditTime: 2020-12-22 17:14:42
+ * @LastEditTime: 2021-03-17 11:43:17
 -->
 <template>
 <transition name="box">
@@ -13,8 +13,7 @@
     <div class="prompt-box-div" >
       <a-icon class="prompt-box-icon" :type="config.icon" :style="{color: config.icon_color || '#faad14'}" />
       <h3 class="prompt-box-title">{{config.title}}</h3>
-      <div class="prompt-box-content">
-        {{config.content}}
+      <div class="prompt-box-content" v-html="config.content">
       </div>
       <div class="prompt-box-button">
         <a-button class="prompt-box-button-cancel" @click="cancel($event)">{{config.cancelText || "取消"}}</a-button>
@@ -83,11 +82,11 @@
 </script>
 <style scoped>
 .box-enter-active, .box-leave-active {
-  filter: blur(0px);
+  /* filter: blur(0px); */
   opacity: 1;
 }
 .box-enter, .box-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  filter: blur(15px);
+  /* filter: blur(15px); */
   opacity: 0;
 }
 .strange-prompt-box{
@@ -97,7 +96,7 @@
   left: 0;
   top: 0;
   background-color: rgba(0,0,0,0.4);
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 /* .background-enter{
   filter: blur(15px);

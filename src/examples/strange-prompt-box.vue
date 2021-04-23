@@ -5,16 +5,18 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-11-09 16:54:35
  * @LastEditors: Pi Patle
- * @LastEditTime: 2021-02-25 17:18:18
+ * @LastEditTime: 2021-03-17 11:43:49
 -->
 <template>
   <div class="strange-prompt-box-a">
     <a-button class="prompt-box-button-cancel" @click="button1($event)">一个按钮</a-button>
     <a-button class="prompt-box-button-cancel" @click="button2($event)">一个按钮2</a-button>
-    <strange-prompt-box-ant :config="config" :type="type" @ok="prompt_box_ok" @cancel="prompt_box_cancel"></strange-prompt-box-ant>
+    <strange-prompt-box-ant :config="config" :type="type" @ok="prompt_box_ok" @cancel="prompt_box_cancel">
+      
+    </strange-prompt-box-ant>
     <strange-modal-ant :width="'500px'"
       :visible="modal_visible" :popconfirmText="popconfirmText" :config="modal_config" :confirmLoading="true"
-      @shut-down="shut_down" @cancel="modal_cancel" @ok="modal_ok"
+      @shut-down="shut_down" @cancel="modal_cancel" @ok="modal_ok" :delete_type="true"
       @popconfirm-confirm="popconfirm_confirm" @popconfirm-cancel="popconfirm_cancel"
     >
       <p>aaaaaaaaaaa</p>
@@ -39,7 +41,7 @@ export default {
         icon: "question-circle",
         icon_color: "#000",
         title: "确认取消",
-        content: "取消后，当前内容将不生效，是否确认取消？",
+        content: "1.每家店只能拥有一个默认接听人<br />2.默认接听人无法删除<br />请谨慎操作",
         okText: "确认",
         cancelText: "取消"
       },
