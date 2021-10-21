@@ -5,7 +5,7 @@
  * @Website: https://senliangpi.github.io/blog/#/
  * @Date: 2020-11-09 16:54:35
  * @LastEditors: Pi Patle
- * @LastEditTime: 2021-03-17 11:43:49
+ * @LastEditTime: 2021-09-03 10:36:08
 -->
 <template>
   <div class="strange-prompt-box-a">
@@ -16,10 +16,10 @@
     </strange-prompt-box-ant>
     <strange-modal-ant :width="'500px'"
       :visible="modal_visible" :popconfirmText="popconfirmText" :config="modal_config" :confirmLoading="true"
-      @shut-down="shut_down" @cancel="modal_cancel" @ok="modal_ok" :delete_type="true"
+      @shut-down="shut_down" @cancel="modal_cancel" @ok="modal_ok" :delete_type="false"
       @popconfirm-confirm="popconfirm_confirm" @popconfirm-cancel="popconfirm_cancel"
     >
-      <p>aaaaaaaaaaa</p>
+      <p>bbbbbbbbbbbb</p>
       <p>aaaaaaaaaaa</p>
       <p>aaaaaaaaaaa</p>
       <p>aaaaaaaaaaa</p>
